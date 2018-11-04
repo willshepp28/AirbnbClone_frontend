@@ -1,27 +1,66 @@
-# Frontend
+# Airbnb Clone (frontend)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
 
-## Development server
+----
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+**What is this?** 
 
-## Code scaffolding
+This is my own version of Airbnb.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Check out the server side on code at https://github.com/willshepp28/Airbnb_backend
 
-## Build
+---
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Software
 
-## Running end-to-end tests
+* [Node.js][]: server-side javascript
+* [npm][]: Package management for Node.js packages
+* [PostgreSQL][]: a object-relational database management system 
+* [Express][]: web application framework
+* [Knex][]: SQL query builder
+* [Angular 6][]: client-side framework
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+## Node Packages (Frontend)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+* [jquery][]: javascript library.
+* [bootstrap][]:css framework
+* [font-awesome][]: icon library
+* [jwt-decode][]: helps decoding JWTs.
+* [popper.js][]: used to position poppers in web applications.
+* [rxjs][]: makes it easier to compose asynchronous or callback-based code.
+* [typescript][]: provides optional static typing, classes and interfaces. 
+
+
+[Heroku]: http://heroku.com/
+
+[jquery]: https://jquery.com/
+[bootstrap]: https://getbootstrap.com/
+[font-awesome]: https://fontawesome.com/
+[jwt-decode]: https://github.com/auth0/jwt-decode#readme
+[popper.js]: https://popper.js.org/index.html
+[rxjs]: https://rxjs-dev.firebaseapp.com/
+[typescript]: https://www.typescriptlang.org/
+
+[Node.js]: http://nodejs.org/
+[npm]: https://npmjs.org/
+[PostgreSQL]: http://www.postgresql.org/
+[Express]: http://expressjs.com/
+[Knex]: https://knexjs.org/
+[Angular 6]: https://angular.io/
+
+
+
+
+
+  ## Requirements
+
+  - [] Users should be able to signup
+  - [] Users should be able to login 
+  - [] Users should be able to post rental listings.
+  - [] User should be able to book a rental listing.
+  - [] User should be able to see a random list of rentals.
+  - [] Users should be able to search homes by city.
+
