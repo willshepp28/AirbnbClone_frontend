@@ -12,12 +12,25 @@ import { TokenInterceptorService } from './core/interceptors/token-interceptor/t
 // Components
 import { AppComponent } from './app.component';
 import { AuthService } from './core/authentication/auth.service';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+import { HomeComponent } from './pages/home/home.component';
+import { BecomeAHostComponent } from './pages/become-a-host/become-a-host.component';
+import { HeaderComponent } from './shared/layout/header/header.component';
+import { FooterComponent } from './shared/layout/footer/footer.component';
+
 
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    SignupComponent,
+    HomeComponent,
+    BecomeAHostComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,45 @@
+.logo {
+    color: rgb(255, 90, 95) !important;
+    display: inline-block !important;
+    vertical-align: middle !important;
+    font-size: 34px !important;
+}
+
+nav {
+    background-color: rgb(255, 255, 255) !important;
+    box-shadow: none !important;
+    width: 100% !important;
+    border-bottom: 1px solid rgb(228, 228, 228) !important;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.pic-container {
+    background-color: rgb(242, 242, 242) !important;
+    box-shadow: rgb(235, 235, 235) 0px 0px 0px 2px !important;
+    display: inline-block !important;
+    vertical-align: middle !important;
+    width: 28px !important;
+    height: 28px !important;
+    border-radius: 50% !important;
+    overflow: hidden !important;
+}
+
+.profilePic {
+    height: 28px;
+    width: 28px;
+    border-bottom: 2px solid transparent !important;
+}
+
+/*  Gets rid of caret in dropdown */
+.dropdown-toggle::after {
+    display:none !important; 
+}
+
+.dropdown::after {
+    display:none !important; 
+}
+
