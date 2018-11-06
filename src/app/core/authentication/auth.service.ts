@@ -20,7 +20,7 @@ export class AuthService {
 | POST - to signup user
 |--------------------------------------------------------------------------
 */
-signup(credentials) {
+register(credentials) {
   return this.http.post<any>(this.url + "signup", credentials);
 }
 
