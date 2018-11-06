@@ -7,6 +7,7 @@
 
 This is my own version of Airbnb.
 
+Check out the progress of this application live at https://airbnb-37b3d.firebaseapp.com/home<br/>
 Check out the server side on code at https://github.com/willshepp28/Airbnb_backend
 
 ---
