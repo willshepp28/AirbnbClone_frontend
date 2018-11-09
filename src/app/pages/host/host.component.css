@@ -9,3 +9,11 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
+.started-btn {
+
+ 
+  background: rgb(255, 90, 95) !important;
+  color: white;
+}
