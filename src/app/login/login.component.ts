@@ -33,23 +33,23 @@ export class LoginComponent implements OnInit {
 
 
   onSubmit() {
-    console.log(this.loginForm.value);
+
     this.submitted = true;
     // stop here if form is invalid
     if (this.loginForm.invalid) {
       return;
     }
     console.log(this.loginForm.value);
-    // this.authService.login(this.loginForm.value)
-    //   .subscribe(
-    //     response => {
-    //       // set token, then redirect user to home page
-    //       localStorage.setItem("token", response.token);
-    //       this.router.navigate(["/home"]);
-    //     },
-    //     error => {
-    //       console.log(error);
-    //     });
+    this.authService.login(this.loginForm.value)
+      .subscribe(
+        response => {
+          // set token, then redirect user to home page
+          localStorage.setItem("token", response);
+          this.router.navigate(["/home"]);
+        },
+        error => {
+          console.log(error);
+        });
   }
 
 }
