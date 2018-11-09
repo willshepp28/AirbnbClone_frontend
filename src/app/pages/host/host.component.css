@@ -1,0 +1,5 @@
+.bg {
+    background: url("https://s3.amazonaws.com/airbnb-clone2018/images/pages/become-a-host.jpg");
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}

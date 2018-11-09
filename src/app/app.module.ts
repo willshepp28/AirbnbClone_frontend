@@ -18,6 +18,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { BecomeAHostComponent } from './pages/become-a-host/become-a-host.component';
 import { HeaderComponent } from './shared/layout/header/header.component';
 import { FooterComponent } from './shared/layout/footer/footer.component';
+import { HostComponent } from './pages/host/host.component';
 
 
 
@@ -30,7 +31,8 @@ import { FooterComponent } from './shared/layout/footer/footer.component';
     HomeComponent,
     BecomeAHostComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    HostComponent
   ],
   imports: [
     BrowserModule,
