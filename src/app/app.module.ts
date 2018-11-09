@@ -19,6 +19,7 @@ import { BecomeAHostComponent } from './pages/become-a-host/become-a-host.compon
 import { HeaderComponent } from './shared/layout/header/header.component';
 import { FooterComponent } from './shared/layout/footer/footer.component';
 import { HostComponent } from './pages/host/host.component';
+import { AuthGuardGuard } from './core/guards/auth-guard/auth-guard.guard';
 
 
 
@@ -43,6 +44,7 @@ import { HostComponent } from './pages/host/host.component';
   ],
   providers: [
     AuthService,
+    AuthGuardGuard,
     {
       provide: HTTP_INTERCEPTORS,
       useClass: TokenInterceptorService,
