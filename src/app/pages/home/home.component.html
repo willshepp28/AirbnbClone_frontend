@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row mt-5">
     <h2 class="airbnb-h2" *ngIf="!isAuthenticated()">Explore Airbnb</h2>
-    <h2 class="airbnb-h2" *ngIf="isAuthenticated()">What can we help you find, {{name}}?</h2>
+    <h2 class="airbnb-h2" *ngIf="isAuthenticated()">What can we help you find, {{name | titlecase}}?</h2>
   </div>
 
   <div class="row mt-5">
