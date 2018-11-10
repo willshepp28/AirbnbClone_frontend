@@ -44,7 +44,7 @@ export class LoginComponent implements OnInit {
       .subscribe(
         response => {
           // set token, then redirect user to home page
-          localStorage.setItem("token", response);
+          localStorage.setItem("token", response.token);
           this.router.navigate(["/home"]);
         },
         error => {

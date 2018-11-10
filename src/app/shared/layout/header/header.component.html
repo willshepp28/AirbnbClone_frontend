@@ -8,14 +8,14 @@
 
   <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
     <!-- Only shows if the user is not logged in -->
-    <div class="navbar-nav ml-auto" *ngIf="!isAuthenticated()">
+    <div class="navbar-nav ml-auto" *ngIf="!isAuthenticated">
       <a routerLink="/host" class="nav-item nav-link active">Become a host</a>
       <a routerLink="/signup" class="nav-item nav-link active">Sign up</a>
       <a routerLink="/login" class="nav-item nav-link active">Login</a>
     </div>
 
     <!-- Only shows if the user is logged in  -->
-    <div class="navbar-nav ml-auto " *ngIf="isAuthenticated()">
+    <div class="navbar-nav ml-auto " *ngIf="isAuthenticated">
       <a class="nav-item nav-link active">Add listing</a>
       <a routerLink="/signup" class="nav-item nav-link active">Saved</a>
       <a routerLink="/login" class="nav-item nav-link active" href="#">Trips</a>
