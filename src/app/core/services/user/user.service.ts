@@ -13,6 +13,6 @@ export class UserService {
   ) { }
 
   getNamePhoto() {
-    return this.http.get<any>(this.url);
+    return this.http.get<any>(this.url + "name-photo");
   }
 }

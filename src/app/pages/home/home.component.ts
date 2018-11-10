@@ -8,6 +8,7 @@ import { UserService } from 'src/app/core/services/user/user.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  name: string;
 
   constructor(
     private authService: AuthService,
@@ -17,7 +18,7 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.userService.getNamePhoto()
       .subscribe(
-        response => { console.log(response); },
+        response => { console.log(response); this.name = response[0].first_name; },
         error =>  console.log(error)
       );
   }
