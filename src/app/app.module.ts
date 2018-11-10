@@ -20,6 +20,8 @@ import { HeaderComponent } from './shared/layout/header/header.component';
 import { FooterComponent } from './shared/layout/footer/footer.component';
 import { HostComponent } from './pages/host/host.component';
 import { AuthGuardGuard } from './core/guards/auth-guard/auth-guard.guard';
+import { SavedComponent } from './pages/saved/saved.component';
+
 
 
 
@@ -33,7 +35,8 @@ import { AuthGuardGuard } from './core/guards/auth-guard/auth-guard.guard';
     BecomeAHostComponent,
     HeaderComponent,
     FooterComponent,
-    HostComponent
+    HostComponent,
+    SavedComponent
   ],
   imports: [
     BrowserModule,
