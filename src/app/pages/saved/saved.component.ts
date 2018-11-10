@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SavedComponent implements OnInit {
 
+  wishlist = false;
   constructor() { }
 
   ngOnInit() {
