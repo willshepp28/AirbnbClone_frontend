@@ -16,4 +16,8 @@ export class CityService {
   getRandomCities() {
     return this.http.get<any>(this.url + "random");
   }
+
+  getCity(place) {
+    return this.http.get<any>(this.url + place);
+  }
 }

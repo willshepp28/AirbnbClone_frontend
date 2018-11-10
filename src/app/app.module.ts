@@ -23,6 +23,9 @@ import { AuthGuardGuard } from './core/guards/auth-guard/auth-guard.guard';
 import { SavedComponent } from './pages/saved/saved.component';
 import { TripsComponent } from './pages/trips/trips.component';
 import { EditProfileComponent } from './pages/edit-profile/edit-profile.component';
+import { CityService } from './core/places/city/city.service';
+import { PlacesComponent } from './pages/places/places.component';
+import { CitiesComponent } from './pages/places/cities/cities.component';
 
 
 
@@ -40,7 +43,9 @@ import { EditProfileComponent } from './pages/edit-profile/edit-profile.componen
     HostComponent,
     SavedComponent,
     TripsComponent,
-    EditProfileComponent
+    EditProfileComponent,
+    PlacesComponent,
+    CitiesComponent
   ],
   imports: [
     BrowserModule,
@@ -51,6 +56,7 @@ import { EditProfileComponent } from './pages/edit-profile/edit-profile.componen
   ],
   providers: [
     AuthService,
+    CityService,
     AuthGuardGuard,
     {
       provide: HTTP_INTERCEPTORS,
