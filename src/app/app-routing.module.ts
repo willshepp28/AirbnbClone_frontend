@@ -12,6 +12,8 @@ import { AuthGuardGuard } from './core/guards/auth-guard/auth-guard.guard';
 import { SavedComponent } from './pages/saved/saved.component';
 import { TripsComponent } from './pages/trips/trips.component';
 import { EditProfileComponent } from './pages/edit-profile/edit-profile.component';
+import { PlacesComponent } from './pages/places/places.component';
+import { CitiesComponent } from './pages/places/cities/cities.component';
 
 // Routes
 const routes: Routes = [
@@ -24,7 +26,12 @@ const routes: Routes = [
   data: { title: "Become a Host and Rent Out Your Room, House or Apartment on Airbnb"} },
   { path: "saved", component: SavedComponent, canActivate: [AuthGuardGuard], data: { title: "Wish Lists"} },
   { path: "trips", component: TripsComponent, canActivate: [AuthGuardGuard], data: { title: "Trips - Airbnb"} },
-  { path: "edit-profile", component: EditProfileComponent, canActivate: [AuthGuardGuard], data: { title: "Edit Profile"}}
+  { path: "edit-profile", component: EditProfileComponent, canActivate: [AuthGuardGuard], data: { title: "Edit Profile"}},
+  { path: "places", component: PlacesComponent, data: { title: "Places - Airbnb"},
+    children: [
+      { path: "cities", component: CitiesComponent }
+    ]
+  }
 ];
 
 

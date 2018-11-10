@@ -10,7 +10,8 @@
     "e2e": "ng e2e",
     "deploy": "ng build --configuration --prod --build-optimizer && firebase deploy && npm run open",
     "postinstall": "ng build --aot --prod",
-    "open": "open -a 'Google Chrome' https://airbnb-37b3d.firebaseapp.com"
+    "open": "open -a 'Google Chrome' https://airbnb-37b3d.firebaseapp.com",
+    "repo": "open -a 'Google Chrome' https://github.com/willshepp28?tab=repositories "
   },
   "private": true,
   "dependencies": {
