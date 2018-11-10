@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { AuthService } from 'src/app/core/authentication/auth.service';
 
 @Component({
   selector: 'app-header',
@@ -12,10 +13,13 @@ export class HeaderComponent implements OnInit {
 
   profilePic = "https://s3.us-east-2.amazonaws.com/ig-clone2019/profilePic/profileplaceholder.png";
 
-  constructor() { }
+  constructor(private authService: AuthService ) { }
 
   ngOnInit() {
   }
 
+  logOut() {
+    this.authService.logout();
+  }
 
 }
