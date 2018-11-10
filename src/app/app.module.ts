@@ -21,6 +21,7 @@ import { FooterComponent } from './shared/layout/footer/footer.component';
 import { HostComponent } from './pages/host/host.component';
 import { AuthGuardGuard } from './core/guards/auth-guard/auth-guard.guard';
 import { SavedComponent } from './pages/saved/saved.component';
+import { TripsComponent } from './pages/trips/trips.component';
 
 
 
@@ -36,7 +37,8 @@ import { SavedComponent } from './pages/saved/saved.component';
     HeaderComponent,
     FooterComponent,
     HostComponent,
-    SavedComponent
+    SavedComponent,
+    TripsComponent
   ],
   imports: [
     BrowserModule,

@@ -10,6 +10,7 @@ import { HostComponent } from './pages/host/host.component';
 import { BecomeAHostComponent } from './pages/become-a-host/become-a-host.component';
 import { AuthGuardGuard } from './core/guards/auth-guard/auth-guard.guard';
 import { SavedComponent } from './pages/saved/saved.component';
+import { TripsComponent } from './pages/trips/trips.component';
 
 // Routes
 const routes: Routes = [
@@ -19,7 +20,8 @@ const routes: Routes = [
   { path: "signup", component: SignupComponent },
   { path: "host", component: HostComponent },
   { path: "become-a-host", component: BecomeAHostComponent, canActivate: [AuthGuardGuard]},
-  { path: "saved", component: SavedComponent }
+  { path: "saved", component: SavedComponent, canActivate: [AuthGuardGuard] },
+  { path: "trips", component: TripsComponent, canActivate: [AuthGuardGuard] }
 ];
 
 
