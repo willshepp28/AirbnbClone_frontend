@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "ng build --prod --build-optimizer && firebase deploy && npm run open",
+    "deploy": "ng build --configuration --prod --build-optimizer && firebase deploy && npm run open",
     "postinstall": "ng build --aot --prod",
     "open": "open -a 'Google Chrome' https://airbnb-37b3d.firebaseapp.com"
   },

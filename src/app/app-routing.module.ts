@@ -17,8 +17,8 @@ import { EditProfileComponent } from './pages/edit-profile/edit-profile.componen
 const routes: Routes = [
   { path: "", redirectTo: "/signup", pathMatch: "full" },
   { path: "home", component: HomeComponent, data: { title: "Vacation Rentals, Homes, Experiences & Places - Airbnb"}},
-  { path: "login", component: LoginComponent },
-  { path: "signup", component: SignupComponent },
+  { path: "login", component: LoginComponent, data: { title: "Vacation Rentals, Homes, Experiences & Places - Airbnb"} },
+  { path: "signup", component: SignupComponent, data: { title: "Vacation Rentals, Homes, Experiences & Places - Airbnb"} },
   { path: "host", component: HostComponent, data: { title: "Rent out your house, apartment or room on Airbnb"} },
   { path: "become-a-host", component: BecomeAHostComponent, canActivate: [AuthGuardGuard],
   data: { title: "Become a Host and Rent Out Your Room, House or Apartment on Airbnb"} },
