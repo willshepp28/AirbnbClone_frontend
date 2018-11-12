@@ -1,0 +1,9 @@
+.next-btn {
+        background: var(--color-buttons-default-hover-color, #008489) !important;
+        color: white;
+}
+
+.divider {
+    border-top: 1px solid rgb(216, 216, 216) !important;
+    box-shadow: 0 -9px 15px -7px rgba(0, 0, 0, 0.09) !important;
+}
