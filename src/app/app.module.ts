@@ -26,6 +26,7 @@ import { EditProfileComponent } from './pages/edit-profile/edit-profile.componen
 import { CityService } from './core/places/city/city.service';
 import { PlacesComponent } from './pages/places/places.component';
 import { CitiesComponent } from './pages/places/cities/cities.component';
+import { DuplicateComponent } from './pages/become-a-host/duplicate/duplicate.component';
 
 
 
@@ -45,7 +46,8 @@ import { CitiesComponent } from './pages/places/cities/cities.component';
     TripsComponent,
     EditProfileComponent,
     PlacesComponent,
-    CitiesComponent
+    CitiesComponent,
+    DuplicateComponent
   ],
   imports: [
     BrowserModule,
