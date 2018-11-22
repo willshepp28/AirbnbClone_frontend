@@ -5,6 +5,11 @@
   <div class="row center mt-3">
       <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
 
+        <!-- Error Messages -->
+        <div *ngIf="submitted && getFormControls.email.errors" class="alert alert-danger" role="alert">
+            <div *ngIf="getFormControls.email.errors.required">Email is required</div>
+        </div>
+
           <div class="form-group">
             <input type="email" class="form-control" placeholder="Email address" formControlName="email">
           </div>

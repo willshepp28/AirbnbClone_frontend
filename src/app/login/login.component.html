@@ -1,21 +1,30 @@
-
 <div class="container mt-5">
 
-    <div class="row center">Log In</div>
-  
-    <div class="row center mt-3">
-        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-  
-            <div class="form-group">
-              <input type="email" class="form-control" placeholder="Email address" formControlName="email">
-            </div>
-          
-            <div class="form-group">
-              <input type="password" class="form-control" placeholder="Password" formControlName="password">
-            </div>
+  <div class="row center">Log In</div>
 
-            <button type="submit" class="btn btn-danger d-flex mx-auto">Submit</button>
-          </form>
-    </div>
-   
+  <div class="row center mt-3">
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+      <!-- Error Messages -->
+      <div *ngIf="submitted && getFormControls.email.errors" class="alert alert-danger" role="alert">
+        <div *ngIf="getFormControls.email.errors.required">Email is required</div>
+      </div>
+
+      <div *ngIf="submitted && getFormControls.password.errors" class="alert alert-danger" role="alert">
+        <div *ngIf="getFormControls.password.errors.required">Password is required</div>
+        <div *ngIf="getFormControls.password.errors.minlength">Password must be at least 3 characters</div>
+      </div>
+
+      <div class="form-group">
+        <input type="email" class="form-control" placeholder="Email address" formControlName="email">
+      </div>
+
+      <div class="form-group">
+        <input type="password" class="form-control" placeholder="Password" formControlName="password">
+      </div>
+
+      <button type="submit" class="btn btn-danger d-flex mx-auto">Submit</button>
+    </form>
   </div>
+
+</div>
